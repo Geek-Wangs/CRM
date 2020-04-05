@@ -1,0 +1,175 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+html, body {
+  height: 100%;
+}
+.page {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* page-header */
+.page-header{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 40px;
+  font-size: 16px;
+  color: #FFF;
+  background: #222;
+}
+.header-logo img {
+  height: 64px;
+}
+.user-info {
+  font-size: 16px;
+  line-height: 64px;
+  color: #FFF;
+}
+.logout {
+  margin-left: 20px;
+  color: #FFF;
+}
+
+/* page-mainer */
+.page-mainer {
+  display: flex;
+  flex: 1;
+}
+.page-aside{
+  width: 298px;
+  border-top: 1px solid #333;
+  background: #222;
+}
+.page-nav-item {
+  display: block;
+  height: 60px;
+  padding: 10px 20px;
+  font-size: 14px;
+  line-height: 40px;
+  color: #999;
+  border-bottom: 1px solid #333;
+}
+.page-nav-item.active {
+  background: #f5f5f5;
+}
+.page-content {
+  flex: 1;
+  padding: 0 40px;
+}
+
+/* page-footer */
+.page-footer {
+  padding: 15px 0;
+  height: 70px;
+  background: #222;
+  text-align: center;
+}
+.page-footer a {
+  margin-right: 20px;
+  font-size: 12px;
+  color: #aaa;
+}
+.page-footer a:first-child, .page-footer a:last-child {
+  margin-right: 0;
+}
+
+/*操作控制容器*/
+.content-title {
+  height: 60px;
+  padding: 10px 0;
+  line-height: 40px;
+  font-size: 16px;
+}
+.content-control {
+  margin: 20px 0;
+}
+
+/*表格样式*/
+.table-container {
+  border-collapse: collapse;
+  margin: 1rem 0;
+  width: 100%;
+}
+.table-container tr {
+  border-top: 1px solid #dfe2e5;
+}
+.table-container tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
+.table-container th {
+  font-style: 16px;
+  font-weight: 600;
+}
+.table-container td,
+.table-container th {
+  border: 1px solid #dfe2e5;
+  padding: .6em 1em;
+  text-align: center;
+}
+.table-container td a{
+  padding-left: 20px;
+  cursor: pointer;
+  color: #551a8b;
+}
+
+/*表单样式*/
+.form-item {
+  width: 400px;
+  margin: 20px 0;
+}
+.form-input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  padding: 10px;
+  border: 1px solid #e4e4e4;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.form-textarea {
+  display: block;
+  width: 100%;
+  line-height: 20px;
+  height: 80px;
+  padding: 10px;
+  border: 1px solid #e4e4e4;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.form-button {
+  display: block;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  font-size: 16px;
+}
+
+/*记录列表样式*/
+.content-mainer {
+  display: flex;
+}
+.log-section {
+  flex: 1;
+  margin-left: 60px;
+}
+.log-item {
+  margin: 20px 0;
+}
+.log-item .log-date {
+  font-size: 16px;
+}
+.log-item .log-content {
+  font-size: 14px;
+  color: #666;
+}

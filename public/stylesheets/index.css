@@ -1,0 +1,394 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #00ADEF;
+}
+.container {
+  margin: 0 auto;
+  width: 940px;
+}
+
+.title {
+  position: relative;
+  width: 143%;
+  margin: 60px 0 40px;
+  font: normal 400 36px/50px "SimSun", serif;
+  color: #666;
+  text-align: center;
+  transform: scaleX(0.7);
+  transform-origin: left;
+}
+.title::before, .title::after {
+  position: absolute;
+  top: 25px;
+  width: 580px;
+  height: 1px;
+  background: #e1e1e1;
+  content: '';
+}
+.title::before {
+  left: 0px;
+}
+.title::after {
+  right: 0px;
+}
+
+/* page */
+.page {
+  min-width: 940px;
+}
+.page-nav {
+  background: #222;
+}
+.page-nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 108px;
+}
+.logo-desktop img {
+  width: 259px;
+  height: 64px;
+}
+.login {
+  position: relative;
+}
+.login::before {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 79px;
+  content: "";
+  opacity: .5;
+  background: #FFF;
+  height: 22px;
+  width: 2px;
+}
+.btn-login {
+  margin-left: 30px;
+  font-size: 16px;
+  color: #FFF;
+}
+.bannerPC {
+  width: 100%;
+}
+
+/* section-models */
+.models-content {
+  display: flex;
+  width: 940px;
+  height: 400px;
+  background: url(/images/all-vehicles-bg.jpg) no-repeat center;
+}
+.content-item {
+  position: relative;
+  width: 25%;
+  height: 100%;
+  border-right: 1px solid #fff;
+  cursor: pointer;
+}
+.content-item:last-child {
+  border-right: none;
+}
+.content-item:hover {
+  background: rgba(0, 0, 0, .38);
+}
+.content-item:hover span {
+  top: calc(100% - 160px);
+}
+.content-item:hover span::before {
+  color: #333;
+  background: #FFF;
+}
+.content-item span {
+  position: absolute;
+  top: calc(100% - 140px);
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 95px;
+  font: normal 400 20px/28px "PingFang SC", "Microsoft YaHei", Helvetica, Arial, serif;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, .5);
+}
+.content-item span::before {
+  content: ">";
+  font-weight: 400;
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin: 0 auto 20px;
+  color: #FFF;
+  line-height: 32px;
+  text-align: center;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+/* section-tool */
+.tool-content {
+  width: 940px;
+  height: 100px;
+  background: url(/images/section-tool.png) no-repeat center;
+  cursor: pointer;
+}
+
+/* section-more */
+.more-item {
+  width: 940px;
+  height: 300px;
+  margin-bottom: 50px;
+}
+.more-item-box {
+  width: 100%;
+  height: 100%;
+  padding-left: 40px;
+  transition: all ease 1s;
+  cursor: pointer;
+}
+.more-item-title {
+  padding-top: 100px;
+  font: normal 400 36px/36px "SimSun", serif;
+  color: #FFF;
+  transform: scaleX(0.7);
+  transform-origin: left;
+}
+.more-item-description, .more-item-more_about {
+  display: none;
+}
+.more-item-box:hover {
+  background: rgba(0, 0, 0, .5);
+}
+.more-item-box:hover .more-item-title {
+  padding-top: 70px;
+}
+.more-item-box:hover .more-item-description {
+  display: block;
+  max-width: 440px;
+  margin-top: 15px;
+  color: #FFF;
+}
+.more-item-box:hover .more-item-more_about {
+  display: inline-block;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #FFF;
+}
+.more-item-box:hover .more-item-more_about:hover {
+  color: #00ADEF;
+}
+
+.new-plan {
+  width: 940px;
+  height: 300px;
+  background: url(/images/new-plan.jpg) no-repeat center;
+  background-size: 100%;
+}
+.she_xyh {
+  display: flex;
+  justify-content: space-between;
+}
+.she {
+  width: 620px;
+  height: 300px;
+  background: url(/images/she.jpg) no-repeat center;
+  background-size: 100%;
+}
+.xyh {
+  width: 310px;
+  height: 300px;
+  background: url(/images/xyh.jpg) no-repeat center;
+  background-size: 100%;
+}
+.car-club {
+  width: 940px;
+  height: 300px;
+  background: url(/images/car-club.jpg) no-repeat center;
+  background-size: 100%;
+}
+.championship_SUV {
+  display: flex;
+  justify-content: space-between;
+}
+.championship {
+  width: 310px;
+  height: 300px;
+  background: url(/images/championship.jpg) no-repeat center;
+  background-size: 100%;
+}
+.SUV {
+  width: 620px;
+  height: 300px;
+  background: url(/images/SUV.jpg) no-repeat center;
+  background-size: 100%;
+}
+
+/* section-subscribe */
+.section-subscribe {
+  width: 100%;
+  height: 566px;
+  margin-top: 70px;
+  padding-top: 200px;
+  background: url(/images/subscribe.jpg) no-repeat center;
+  background-size: 100% 100%;
+}
+.subscribe-content {
+  width: 300px;
+  height: 166px;
+  padding: 20px 36px;
+  background: rgba(255, 255, 255, .9);
+}
+.subscribe-title {
+  margin-bottom: 15px;
+  font: normal 400 36px/50px "SimSun", serif;
+  color: #333;
+  transform: scaleX(0.7);
+  transform-origin: left;
+}
+.subscribe-tips {
+  font-weight: 300;
+  color: #333;
+}
+.subscribe-btn {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* section-share */
+.section-share {
+  padding-top: 40px;
+  padding-bottom: 100px;
+}
+.share-content {
+  display: flex;
+  justify-content: flex-end;
+}
+.share-text {
+  height: 32px;
+  line-height: 32px;
+  color: #222;
+}
+.wechat, .sina, .zhihu {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin-left: 30px;
+  cursor: pointer;
+}
+.wechat {
+  background: url(/images/wechat.png) no-repeat center;
+  background-size: 100%;
+}
+.wechat:hover {
+  background: url(/images/wechat-color.png) no-repeat center;
+  background-size: 100%;
+}
+.sina {
+  background: url(/images/sina.png) no-repeat center;
+  background-size: 100%;
+}
+.sina:hover {
+  background: url(/images/sina-color.png) no-repeat center;
+  background-size: 100%;
+}
+.zhihu {
+  background: url(/images/zhihu.png) no-repeat center;
+  background-size: 100%;
+}
+.zhihu:hover {
+  background: url(/images/zhihu-color.png) no-repeat center;
+  background-size: 100%;
+}
+
+/* page-footer */
+.page-footer {
+  padding: 15px 0;
+  height: 70px;
+  background: #222;
+  text-align: center;
+}
+.page-footer a {
+  margin-right: 20px;
+  font-size: 12px;
+  color: #aaa;
+}
+.page-footer a:first-child, .page-footer a:last-child {
+  margin-right: 0;
+}
+.page-footer a:hover {
+  color: #00ADEF;
+}
+
+/* suspension */
+.suspension-box {
+  position: fixed;
+  bottom: 5%;
+  right: 1%;
+  z-index: 10;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: #000;
+}
+.suspension-img {
+  position: absolute;
+  top: 59%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120px;
+}
+.text-effect {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  filter: contrast(110%) brightness(190%);
+}
+.effect-text {
+    font: 700 26px 'Lato', sans-serif;
+    background: black;
+}
+.effect-text::before, .effect-text::after {
+    content: attr(data-text);
+    color: white;
+    filter: blur(0.02em);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.effect-text::after {
+    mix-blend-mode: difference;
+}
+.gradient {
+    background: linear-gradient(45deg, red, blue);
+    mix-blend-mode: multiply;
+}
+.gradient, .spotlight {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.spotlight {
+    animation: light 5s infinite linear;
+    background: radial-gradient(circle, white, transparent 25%) 0 0 / 25% 25%, radial-gradient(circle, white, black 25%) 50% 50% / 12.5% 12.5%;
+    top: -100%;
+    left: -100%;
+    mix-blend-mode: color-dodge;
+}
+@keyframes light {
+  100% {
+    transform: translate3d(50%, 50%, 0);
+  }
+}
